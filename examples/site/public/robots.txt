@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /*?room=
+Disallow: /*?demo=
+Disallow: /*?create=
+
+Sitemap: https://example.com/sitemap.xml

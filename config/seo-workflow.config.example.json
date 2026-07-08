@@ -1,0 +1,15 @@
+{
+  "baseUrl": "https://example.com",
+  "siteRoot": "examples/site",
+  "publicDir": "public",
+  "rootHtml": "index.html",
+  "publicRoutes": ["/", "/pricing/", "/faq/"],
+  "privatePatterns": ["/*?room=", "/*?demo=", "/*?create="],
+  "requiredRootMarkers": ["og:title", "twitter:card", "application/ld+json"],
+  "privateNoindexRequired": true,
+  "journey": {
+    "directPath": "/",
+    "primaryHeading": "ExampleRoom",
+    "primaryCtaText": "Create a room"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "seo-proof-workflow",
+  "version": "0.1.0",
+  "description": "Repeatable SEO proof workflow: static audit, Search Console, browser capture, video compression, and Gemini visual judging.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Homen Shum",
+  "scripts": {
+    "audit": "tsx src/audit-static.ts",
+    "perf": "tsx src/performance-check.ts",
+    "search-console": "tsx src/search-console-report.ts",
+    "capture:cdp": "tsx src/chrome-cdp-capture.ts",
+    "frames:video": "tsx src/frames-to-video.ts",
+    "compress-video": "tsx src/compress-video.ts",
+    "judge-video": "tsx src/judge-video-gemini.ts",
+    "journey": "playwright test",
+    "typecheck": "tsc --noEmit",
+    "validate": "npm run typecheck && npm run audit -- --config config/seo-workflow.config.example.json --site-root examples/site"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^3.0.82",
+    "ai": "^6.0.206",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

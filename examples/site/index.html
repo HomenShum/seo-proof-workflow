@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ExampleRoom - collaborative AI workflow rooms</title>
+    <meta name="description" content="ExampleRoom helps teams review source-backed work in collaborative AI rooms." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://example.com/" />
+    <meta property="og:title" content="ExampleRoom - collaborative AI workflow rooms" />
+    <meta property="og:description" content="Review source-backed work in collaborative AI rooms." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "ExampleRoom",
+        "url": "https://example.com/"
+      }
+    </script>
+    <script>
+      (function () {
+        if (/[?&](room|demo|create)=/i.test(window.location.search)) {
+          var robots = document.querySelector('meta[name="robots"]');
+          robots.setAttribute("content", "noindex,nofollow");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>ExampleRoom</h1>
+      <p>Collaborative AI rooms for source-backed work.</p>
+      <a href="/?create=1">Create a room</a>
+    </main>
+  </body>
+</html>
