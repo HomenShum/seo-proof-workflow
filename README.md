@@ -2,7 +2,7 @@
 
 A small, repeatable SEO QA toolkit for proving that a public web surface is crawlable, fast, measurable, and visually credible from search to landing.
 
-This repository was extracted from the NodeRoom SEO loop. It intentionally contains only the workflow, not the product app.
+This repository was extracted from the [NodeRoom](https://noderoom.live/) SEO loop. It intentionally contains only the workflow, not the product app.
 
 ## What It Does
 
@@ -13,6 +13,7 @@ This repository was extracted from the NodeRoom SEO loop. It intentionally conta
 - Compresses videos or screenshot frames into review MP4s.
 - Sends the final MP4 to Gemini for structured visual QA.
 - Writes machine-readable JSON and Markdown receipts.
+- Documents a hub-and-spoke keyword cluster workflow inspired by `AgriciDaniel/codex-seo`.
 
 ## Why A Brand Query May Not Show Yet
 
@@ -65,6 +66,18 @@ npm run capture:cdp -- --search "Your brand exact product phrase" --target-host 
 npm run frames:video -- --input-dir artifacts/chrome-cdp-search
 npm run judge-video -- --input artifacts/chrome-cdp-search.review.mp4 --scenario google-origin
 ```
+
+## Keyword Clusters
+
+Use `docs/KEYWORD_CLUSTER.md` before adding pages. The short version:
+
+- exact-brand page for the bare brand query;
+- pillar page for the broad solution category;
+- focused spokes for one intent each;
+- internal links between pillar, spokes, use cases, and comparisons;
+- Search Console monitoring before adding more pages.
+
+NodeRoom used this pattern for searches such as `NodeRoom`, `collaborative AI workspace`, `AI agent collaboration workspace`, `source-backed AI workflow`, `AI diligence room`, and `AI research workspace`.
 
 ## Required Credentials
 
