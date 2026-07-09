@@ -1,4 +1,4 @@
-# SEO Proof Workflow
+# NodeSEO
 
 A small, repeatable SEO QA toolkit for proving that a public web surface is crawlable, fast, measurable, and visually credible from search to landing.
 
@@ -88,7 +88,7 @@ NodeRoom used this pattern for searches such as `NodeRoom`, `collaborative AI wo
 On Windows, launch a separate Chrome profile for CDP capture:
 
 ```powershell
-Start-Process "$env:ProgramFiles\Google\Chrome\Application\chrome.exe" -ArgumentList "--remote-debugging-port=9222 --user-data-dir=$env:TEMP\seo-proof-chrome"
+Start-Process "$env:ProgramFiles\Google\Chrome\Application\chrome.exe" -ArgumentList "--remote-debugging-port=9222 --user-data-dir=$env:TEMP\nodeseo-chrome"
 ```
 
 ## Receipts
