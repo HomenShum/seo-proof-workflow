@@ -4,6 +4,11 @@ A small, repeatable SEO QA toolkit for proving that a public web surface is craw
 
 This repository was extracted from the [NodeRoom](https://noderoom.live/) SEO loop. It intentionally contains only the workflow, not the product app.
 
+Storyboard first: public proof media and SEO claims should follow
+[`docs/FEATURE_PROOF_STORYBOARD.md`](docs/FEATURE_PROOF_STORYBOARD.md). The
+storyboard keeps static SEO checks, Search Console data, controlled browser
+capture, Gemini visual QA, and receipt boundaries separate.
+
 ## What It Does
 
 - Audits static SEO files: titles, descriptions, canonicals, sitemap, robots.txt, JSON-LD, Open Graph, and private-route noindex guards.
